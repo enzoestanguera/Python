@@ -24,14 +24,17 @@ print(f"Quantidade: {len(nomes_consoante)}")
 
 '''
 
-list = []
+lista = []
+i = 0
 
 while True:
-    item = input(f"Digite item( ou 'sair' para Finalizar):")
+    item = input("Digite um item (ou 'sair' para finalizar): ")
 
     if item.lower() == 'sair':
         break
 
-    list.append(item)
+    lista.append(item)
+    print()
 
-    print('\n')
+for i in range(len(lista)):
+    print(f"{i + 1}. {lista[i]}")
