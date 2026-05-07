@@ -19,7 +19,6 @@ def fechando_programa():
 def opcao_invalida():
     print("O seu numero esta incorreto escolha outro!\n")
     input("Digite uma tecla para voltar ao menu principal: ")
-    
 
 def cadastrar_novo_restaurante():
     os.system('cls')
