@@ -12,28 +12,30 @@ import os
 
 def fechando_programa():
     os.system('cls')
-    opcao_invalida =("Encerrando programa\n")
+    print("Encerrando programa\n")
 
 def opcao_invalida():
     print("O seu numero esta incorreto escolha outro! ")
 
 def opções():
-    print("1 - Ativar troxa")
-    print("2 - Desativar troxa")
-    print("3 - Configurar troxa")
-    print("4 - Sair")
-  
-    opção = int(input("Digite a opção desejada: "))
+    while True:
+        print("1 - Ativar celular")
+        print("2 - Desativar celular")
+        print("3 - Configurar celular")
+        print("4 - Sair")
+    
+        opção = int(input("Digite a opção desejada: "))
 
-    if opção == 1:
-        print("Ativar troxa")
-    elif opção == 2:
-        print("Desativar troxa")
-    elif opção == 3:
-        print("Configurar troxa")
-        fechando_programa()
-    else:
-        opcao_invalida()
+        if opção == 1:
+            print("Ativar celular")
+        elif opção == 2:
+            print("Desativar celular")
+        elif opção == 3:
+            print("Configurar celular")
+        elif opção == 4:
+            fechando_programa()
+        else:
+            opcao_invalida()
         
 
 def main():
