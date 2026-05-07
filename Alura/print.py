@@ -10,6 +10,8 @@ print(f"O valor de pi é {pi:.2f}")
 
 import os
 
+restaurantes = []
+
 def fechando_programa():
     os.system('cls')
     print("Encerrando programa\n")
@@ -17,14 +19,26 @@ def fechando_programa():
 def opcao_invalida():
     print("O seu numero esta incorreto escolha outro!\n")
     input("Digite uma tecla para voltar ao menu principal: ")
-    main()
+
+def cadastrar_novo_restaurante():
+    os.system('cls')
+    print('Cadastro de novos Restaurantes\n')
+    restaurante_nome = input("Digite o nome do restaurante que deseja cadastrar: ")
+    restaurantes.append(restaurante_nome)
+    print(f"O restaurante {restaurante_nome} foi cadastrado com sucesso")
+    input("digite uma tecla para voltar ao menu principal: ")
+    if opções == 6:
+        opções
+    opções()
+    if opções == 4:
+        fechando_programa
 
 def opções():
     try:
         opção = int(input("Digite a opção desejada: "))
 
         if opção == 1:
-            print("Ativar celular")
+            cadastrar_novo_restaurante()
         elif opção == 2:
             print("Desativar celular")
         elif opção == 3:
