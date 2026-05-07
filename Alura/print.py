@@ -15,15 +15,12 @@ def fechando_programa():
     print("Encerrando programa\n")
 
 def opcao_invalida():
-    print("O seu numero esta incorreto escolha outro! ")
+    print("O seu numero esta incorreto escolha outro!\n")
+    input("Digite uma tecla para voltar ao menu principal: ")
+    main()
 
 def opções():
-    while True:
-        print("1 - Ativar celular")
-        print("2 - Desativar celular")
-        print("3 - Configurar celular")
-        print("4 - Sair")
-    
+    try:
         opção = int(input("Digite a opção desejada: "))
 
         if opção == 1:
@@ -36,9 +33,15 @@ def opções():
             fechando_programa()
         else:
             opcao_invalida()
-        
+    except:
+        opcao_invalida()
 
 def main():
+    os.system('cls')
+    print("1 - Ativar celular")
+    print("2 - Desativar celular")
+    print("3 - Configurar celular")
+    print("4 - Sair\n")
     opções()
 
 if __name__ == '__main__':
