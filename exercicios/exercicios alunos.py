@@ -56,3 +56,4 @@ quantidade = qtde_alunos()
 lista_notas = preencher_notas(quantidade)
 media = calcula_media
 imprimir_notas(lista_notas)
+print(f'Quantidade: {notas_baixas(lista_notas)}')
