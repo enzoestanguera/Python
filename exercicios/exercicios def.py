@@ -76,6 +76,4 @@ resultado = controlador(opcao, n1, n2)
 
 if resultado is not None:
     imprimir(resultado)
-
-
     
