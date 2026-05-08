@@ -16,6 +16,8 @@ Digite a idade: 25
 Adulto
 '''
 
+
+
 idade = int(input('qual a sua idade: '))
 
 if idade <= 12:
