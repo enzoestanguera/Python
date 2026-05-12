@@ -1,3 +1,4 @@
+'''
 def menu():
     print('---Menu---')
     print('1- Adição')
@@ -76,4 +77,59 @@ resultado = controlador(opcao, n1, n2)
 
 if resultado is not None:
     imprimir(resultado)
+    '''
+
+
+import os
+
+pedra = "pedra"
+papel = "papel"
+tesoura = "tesoura"
+
+Jogador1 = input("Escolha uma opção: ").lower()
+jogador2 = input("Vez do Jogador 2: ").lower()
+
+def Escolhasuavez():
+
+    while True:
+        if Jogador1 == jogador2:
+            print("Empate ")
+            break
+        elif Jogador1 == "papel" and jogador2 == "pedra":
+            print("Jogador 1 venceu")
+            break
+        elif Jogador1 == "pedra" and jogador2 == "papel":
+            print("jogador 2 venceu") 
+            break
+        elif Jogador1 == "tesoura" and jogador2 == "papel":
+            print("jogador 1 venceu") 
+            break
+        elif Jogador1 == "papel" and jogador2 == "tesoura":
+            print(" jogador 2 venceu")
+            break            
+        elif Jogador1 == "pedra" and jogador2 == "tesoura":
+            print("jogador 1 venceu")
+            break
+        elif Jogador1 == "tesoura" and jogador2 == "pedra":
+            print("jogador 2 venceu")
+        else:
+            opcao_errada()
+            
+            break
+
+def opcao_errada():
+    os.system("cls")
+    if Jogador1 == opcao_errada and jogador2 == opcao_errada:
+        print("opção errada escolha outra opção!")
+        Escolhasuavez()
+
+def excutar():
+    Escolhasuavez()
+excutar()
     
+
+   
+
+
+
+
