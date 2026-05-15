@@ -55,6 +55,7 @@ lista_inicial()
 lista_atulizada()
 lista_final()
 '''
+'''
 jogos = []
 
 
@@ -131,4 +132,47 @@ def menu():
 
 # Principal
 menu()
+'''
+
+def qtde_alunos():
+    qtde = 0
+    while qtde < 1:
+        qtde = input("Qual a quantidade de alunos: ")
+    if qtde < 1:
+        print("Essa quantidade tem que ser maior que ZERO!")
+    return qtde
+
+qtde_alunos = qtde_alunos()     
+
+def preencher_notas(alun):
+        notas = []
+        for i in range(alun):
+            print(f"Alunos {i+1}")
+            nota = float(input("Nota: "))
+            nota.append(nota)
+            return notas
+
+lista_notas = preencher_notas()        
+
+def calcular_media(alunos, notas):
+    total_notas = 0
+    for nota in notas:
+        total_notas = total_notas + notas
+    media = total_notas / len(notas)
+    print(f"A media dos alunos é {media:.1f}")
+
+def alunos_abaixo_media(notas):
+     alunos_abaixo = []
+     for nota in notas:
+       if nota < 6:
+        alunos_abaixo.append(nota)
+        return alunos_abaixo 
+
+alun_abaixo = alunos_abaixo_media(lista_notas)
+print(alun_abaixo)
+
+def qtde_alunos_abaixo(abaixo):
+    print(f"Quantidade de alunos abaixo de média é {len(abaixo)}")
+
+qtde_alunos_abaixo(alun_abaixo)    
 
