@@ -61,3 +61,18 @@ media_final = (nota_semestre1 * 0.40) + (nota_semestre2 * 0.60)
 print("Nota do semestre 1:", nota_semestre1)
 print("Nota do semestre 2:", nota_semestre2)
 print("Média final:", media_final)
+
+'''
+TO DO 
+função entrada das notas - cp (lista), sprint (lista) e gs (numero)
+função de aplicar os pesos de 40% e 60%
+função para imprimir relatorios 
+função para verificar status de aprovação (nota>=60)
+
+print(f"{'Vendedor': <12} | {'Venda': >6} | {'Media':>6} | {'Mediana': >6} | {'Moda': >6}")
+print("-" * 50)
+for vendedor, vendas in ven_vend.items():
+  print(f"{vendedor:<12} | {vendas:>6} | {med_ved:>6} |{medi_vend: >6} | {mode_vend: >6}")
+ 
+
+'''
