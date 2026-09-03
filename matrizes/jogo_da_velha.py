@@ -9,7 +9,7 @@ def jogo_da_velha():
         for l in range(3):
             for c in range(3):
                 print(f"[{tabuleiro[l][c]:^5}]", end="") # centrliza na matriz e coloca dois espaços de cada lado para deixar a estetica mais bonita, 
-            print() #end foi usado para a matriz nhão ficar em formato vertical
+            print() #end foi usado para a matriz não ficar em formato vertical
         print("-=" * 15)
 
         # Entrada e Tratamento de Erros
