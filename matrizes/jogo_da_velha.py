@@ -19,7 +19,7 @@ def jogo_da_velha():
                 linha = int(input("Digite a linha (0 a 2): "))
                 coluna = int(input("Digite a coluna (0 a 2): "))
 
-                # não aceita indices maior ou menor  que 0,1,2
+                # não aceita indices maior ou menor que 0,1,2
                 if linha < 0 or linha > 2 or coluna < 0 or coluna > 2:
                     print("Posição inválida! Digite números entre 0 e 2.")
                     continue#renicia o loop
